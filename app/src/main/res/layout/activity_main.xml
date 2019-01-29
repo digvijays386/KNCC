@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp">
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:theme="@style/AppToolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+        <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/container"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".activities.MainActivity">-->
+
+<!--<com.google.android.material.appbar.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+    <!--<androidx.appcompat.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="@color/white"-->
+            <!--android:theme="@style/AppToolbar"/>-->
+<!--</com.google.android.material.appbar.AppBarLayout>-->
+
+<!--<FrameLayout-->
+        <!--android:id="@+id/fragment_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/appbar"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/navigation">-->
+<!--</FrameLayout>-->
+<!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--android:id="@+id/navigation"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?android:attr/windowBackground"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:menu="@menu/navigation"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/fragment_container"/>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

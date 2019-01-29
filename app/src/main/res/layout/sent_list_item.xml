@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        android:layout_margin="6dp">
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingLeft="32dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/name"
+                android:text="First Name"
+                android:textSize="20sp"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/phone"
+                android:hint="phone no"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/name"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/contact_label"
+                android:text="Sent OTP :"
+                android:layout_below="@id/name"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/otp"
+                android:hint="13"
+                android:layout_toRightOf="@+id/contact_label"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/time_label"
+                android:text="Sent time :"
+                android:layout_below="@id/contact_label"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/time"
+                android:hint="23:32:23"
+                android:layout_toRightOf="@+id/time_label"
+                android:layout_below="@+id/contact_label"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

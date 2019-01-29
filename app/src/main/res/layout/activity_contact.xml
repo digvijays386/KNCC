@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/common_background">
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                app:titleTextColor="@color/colorAccent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/AppToolbar"/>
+
+        <ImageView
+                android:layout_marginTop="110dp"
+                android:layout_gravity="center|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_dummy_user"
+                android:id="@+id/imageView2"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginTop="300dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/ll_fname"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="16dp">
+            <TextView
+
+                    android:text="First Name"
+                    android:layout_below="@id/name"
+                    android:textColor="@color/black"
+                    android:layout_width="130dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/tv_fname"
+                    android:hint="Digvijay"
+                    android:layout_below="@+id/name"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_lname"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll_fname"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            <TextView
+                    android:text="Last Name"
+                    android:textColor="@color/black"
+                    android:layout_width="130dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/tv_lname"
+                    android:hint="Singh"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/ll_contact"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll_lname"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+            <TextView
+
+                    android:text="Cell No"
+                    android:layout_below="@+id/room_label"
+                    android:textColor="@color/black"
+                    android:layout_width="130dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/tv_cellNo"
+                    android:hint="9927945802"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_below="@+id/ll_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_marginTop="40dp"
+                android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_call"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1">
+                <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/text_blue"
+                        android:text="Call Contact"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_msg"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/card_background"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1">
+                <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/text_blue"
+                        android:text="Send Message"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+            android:id="@+id/page_progress_bar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:visibility="gone"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
