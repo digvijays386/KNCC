@@ -43,6 +43,7 @@ class HomeFragment : Fragment() {
         super.onResume()
 
         doAsync {
+//             getting the contacts from dummy json
             val contact = appManger!!.getContacts()
 
             if (contact.isEmpty()) {
