@@ -4,6 +4,7 @@
           package="com.thegabru.kncc">
 
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <dist:module dist:instant="true"/>
 

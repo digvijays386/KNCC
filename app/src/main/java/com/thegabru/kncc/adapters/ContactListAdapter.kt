@@ -18,7 +18,7 @@ class ContactListAdapter() : RecyclerView.Adapter<ContactListItemHolder>() {
         override fun onBindViewHolder(holder: ContactListItemHolder, position: Int) {
 
             var contact = currentResults[position]
-            holder?.updateWithPage(contact)
+            holder.updateWithPage(contact)
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactListItemHolder {

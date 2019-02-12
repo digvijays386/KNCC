@@ -2,13 +2,16 @@ package com.thegabru.kncc.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import com.github.kittinunf.fuel.Fuel
 import com.google.gson.Gson
 import com.thegabru.kncc.R
 import com.thegabru.kncc.fragments.SendOTPDialogFragment
 import com.thegabru.kncc.models.Contact
 import kotlinx.android.synthetic.main.activity_contact.*
+import org.jetbrains.anko.toast
 
 class ContactActivity : AppCompatActivity() {
 
@@ -35,11 +38,13 @@ class ContactActivity : AppCompatActivity() {
 
             val fm = supportFragmentManager
 
-            val editNameDialogFragment = SendOTPDialogFragment.newInstance("Send OTP", Gson().toJson(contact).toString() )
+            val editNameDialogFragment =
+                SendOTPDialogFragment.newInstance("Send OTP", Gson().toJson(contact).toString())
 //            editNameDialogFragment.setTargetFragment(this, 300)
             editNameDialogFragment.show(fm, "fragment_edit_name")
 
         }
+        cv_call.setOnClickListener { toast("This function is not implemented yet!") }
 
     }
 
